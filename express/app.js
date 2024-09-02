@@ -43,5 +43,10 @@ app.get('/home/room/:id/:name' , (req ,res)=>{
 app.post('/hoe-post' , (req , res)=>{
     res.send("This is the home page _yep POST is working normally")
 
-    
+
 })
+// lets listen our app
+app.listen(8080 , ()=>{
+    console.log("my express ap is running on http://localhost:8080 ......")
+})
+
