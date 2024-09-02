@@ -31,5 +31,8 @@ app.get('/home/room' . (req, res)=>{
 // use of navigating routes using param
 app.get('/home/room/:id' , (req ,res)=>{
     res.send("Data on id 123"  ,req.params.id);
-    
+
+})
+app.get('/home/room/:id/:name' , (req ,res)=>{
+    res.send("This is the name param" , req.params.name)
 })
