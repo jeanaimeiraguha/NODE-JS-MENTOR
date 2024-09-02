@@ -22,8 +22,14 @@ next();
 // use window reload as js
 app.get('/home/room' . (req, res)=>{
     res.send("This is IRAGUHA's room")
-    window.location.reload();
-    setTimeout(()=>{
-        
+    //window.location.reload();
+    //setTimeout(()=>{
+        //window.location.reload()
+
     })
+//})
+// use of navigating routes using param
+app.get('/home/room/:id' , (req ,res)=>{
+    res.send("Data on id 123"  ,req.params.id);
+    
 })
