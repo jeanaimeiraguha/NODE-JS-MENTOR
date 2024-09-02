@@ -35,4 +35,13 @@ app.get('/home/room/:id' , (req ,res)=>{
 })
 app.get('/home/room/:id/:name' , (req ,res)=>{
     res.send("This is the name param" , req.params.name)
+
+})
+
+// lets post some data
+
+app.post('/hoe-post' , (req , res)=>{
+    res.send("This is the home page _yep POST is working normally")
+
+    
 })
