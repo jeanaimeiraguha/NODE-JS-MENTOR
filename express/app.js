@@ -18,3 +18,12 @@ app.all('/home/room' ,(req , res , next)=>{
     res.send*("This is home page")
 next();
 })
+
+// use window reload as js
+app.get('/home/room' . (req, res)=>{
+    res.send("This is IRAGUHA's room")
+    window.location.reload();
+    setTimeout(()=>{
+        
+    })
+})
